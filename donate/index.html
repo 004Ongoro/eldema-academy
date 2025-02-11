@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta
+      name="keywords"
+      content="ela academy, about ela academy, ela.org, eladema letap academy, private schools, eladema academy, ela school, primary school, schools near me"
+    />
+    <meta name="theme-color" content="#10853b" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta
+      name="og:image"
+      content="https://www.github.com/004Ongoro/ELA-Academy/assets/images/logo.jpg"
+    />
+    <meta
+      name="og:title"
+      content="Eldema letap Academy - Private School in Kenya"
+    />
+    <meta
+      name="og:description"
+      content="Eldema Letap Academy(ELA Academy) is a community based school passionate about helping children achieve their dreams by offering high quality education"
+    />
+    <meta name="og:url" content="https://www.ella-academy.org" />
+    <meta name="og:type" content="website" />
+    <meta name="og:site_name" content="Eldema Letap Academy Website" />
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../apple-touch.png" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Donate to Eldema Letap Academy</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <nav class="sticky-top">
+      <div class="navbar">
+        <div class="container nav-container">
+          <input class="checkbox" type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="bline line1"></span>
+            <span class="bline line2"></span>
+            <span class="bline line3"></span>
+          </div>
+          <div class="logo">
+            <img src="../assets/images/logo1x.png" alt="" />
+          </div>
+          <div class="menu-items">
+            <li><a href="../">Home</a></li>
+            <li><a href="../about-us/">About Us</a></li>
+            <li><a href="../academics/">Academics</a></li>
+            <li><a href="../gallery/">Gallery</a></li>
+            <li><a href="../contact-us/">Contact</a></li>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="donate" class="section-donate">
+      <div class="container text-center">
+        <h2 class="title">Support Our School</h2>
+        <p class="lead">
+          Your contribution helps provide quality education, better facilities,
+          and opportunities for our students.
+        </p>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="donation-impact">
+              <h3>How Your Donation Helps</h3>
+              <ul class="list-unstyled">
+                <li>
+                  <i class="bi bi-check-circle"></i> Scholarships for
+                  underprivileged students
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i> Classroom and library
+                  facilities and improvements
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i> Sports, music, and arts
+                  programs
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i> Access to modern learning
+                  materials
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="donation-form">
+              <h3>Make a Donation</h3>
+              <form action="#" method="POST">
+                <div class="mb-3">
+                  <label for="donation-amount" class="form-label"
+                    >Choose an Amount:</label
+                  >
+                  <select class="form-select" id="donation-amount" required>
+                    <option value="">Select an amount</option>
+                    <option value="500">KES 500</option>
+                    <option value="1000">KES 1,000</option>
+                    <option value="5000">KES 5,000</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <input
+                  type="text"
+                  class="form-control input-custom-amount block p-1"
+                  placeholder="Amount in USD"
+                  aria-label="Amount"
+                  aria-describedby="addon-wrapping"
+                  id="customAmountInput"
+                />
+
+                <div class="mb-3">
+                  <label for="payment-method" class="form-label"
+                    >Payment Method:</label
+                  >
+                  <select class="form-select" id="payment-method" required>
+                    <option value="">Select a method</option>
+                    <option value="mpesa">M-Pesa</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank">Bank Transfer</option>
+                  </select>
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                >
+                  Donate Now
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-donate text-center mt-5">
+          <h3>Interested in Sponsoring a Student?</h3>
+          <p>
+            For corporate sponsorships or large donations, please
+            <a href="../contact-us/">contact us</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              Confirm Payment
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Confirm your payment of $<span class="modalAmount">200</span> to
+              support a student's education and paying via
+              <span class="modalPaymentMethod">Payment Method</span>.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Pay</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <footer class="bg-primary-custom text-center text-lg-start col-md-4">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h1>Quick Summary</h1>
+            <p>
+              Eldema Letap School is a community-based school committed to
+              providing quality education, empowering students, and fostering a
+              nurturing learning environment.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h1>Quick Links</h1>
+            <ul>
+              <li><a href="../">Home</a></li>
+              <li><a href="../academics/">Academics</a></li>
+              <li><a href="../about-us/">About Us</a></li>
+              <li><a href="../gallery/">Gallery</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h1>Reach Us</h1>
+            <li>PP26+X9 Nairobi</li>
+            <li>Phone: <a href="tel:+254722395465">+254 722 395465</a></li>
+            <li>
+              Email:
+              <a href="mailto:eldemaletapacademy@gmail.com"
+                >eldemaletapacademy@gmail.com</a
+              >
+            </li>
+          </div>
+          <div class="footer-section">
+            <h1>Follow Us</h1>
+            <ul class="socials">
+              <li>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100071104893902&mibextid=rS40aB7S9Ucbxw6v"
+                  ><i class="bi bi-facebook" target="_blank"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/"
+                  ><i class="bi bi-instagram" target="_blank"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://wa.me/+254722395465" target="_blank"
+                  ><i class="bi bi-whatsapp"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/"
+                  ><i class="bi bi-youtube" target="_blank"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="line"></div>
+          <p>
+            Copyright &copy; 2025 Eldema Letap Academy <br />
+            All Right Reserved
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      // ------------ Handle Payment
+      const paymentForm = document.getElementById("payment-form");
+      const paymentMethod = document.getElementById("payment-method");
+      const paymentAmount = document.getElementById("donation-amount");
+
+      paymentForm.addEventListener("submit", handleSubmitPayment);
+
+      const handleSubmitPayment = (e) => {
+        e.preventDefault();
+        const selectedPaymentMethod = paymentMethod.value;
+        const selectedPaymentAmount = paymentAmount.value;
+
+        if (selectedPaymentAmount == "Other") {
+          console.log(
+            "Selected: " +
+              selectedPaymentAmount +
+              ": for: " +
+              selectedPaymentMethod
+          );
+        }
+      };
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
