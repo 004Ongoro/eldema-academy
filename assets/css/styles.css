@@ -622,8 +622,10 @@ footer::after {
 }
 
 .partner-link:hover {
-  background-color: #0056b3;
+  background-color: white;
   text-decoration: none;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
 }
 
 .call-to-action {
@@ -648,7 +650,7 @@ footer::after {
   color: #444;
 }
 
-.cta-button {
+.cta-button-p {
   display: inline-block;
   padding: 12px 25px;
   background-color: #28a745;
@@ -659,7 +661,7 @@ footer::after {
   font-weight: 600;
 }
 
-.cta-button:hover {
+.cta-button-p:hover {
   background-color: #218838;
   text-decoration: none;
 }
