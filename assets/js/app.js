@@ -1,5 +1,5 @@
-const bootstrap = require("bootstrap"); // Import Bootstrap SJ
-const scrollReveal = require("scrollreveal");
+// const bootstrap = require("bootstrap"); // Import Bootstrap SJ
+// const scrollReveal = require("scrollreveal");
 
 // Scroll reveal
 document.addEventListener('DOMContentLoaded', () => {
