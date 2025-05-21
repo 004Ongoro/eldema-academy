@@ -550,6 +550,157 @@ footer::after {
   }
 }
 
+/* =================== Our Partners Section Styles ========== */
+.partners-section {
+  padding: 60px 0;
+  background-color: #fff;
+  text-align: center;
+  border-bottom: 1px solid #eee; 
+}
+
+.partners-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: var(--color-primary); 
+}
+
+.partners-section .section-description {
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  color: #555;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.partner-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.partner-logo {
+  max-width: 120px; 
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 4px; 
+}
+
+.partner-card h3 {
+  font-size: 1.5em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.partner-card p {
+  font-size: 0.95em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.partner-link {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.partner-link:hover {
+  background-color: #0056b3;
+  text-decoration: none;
+}
+
+.call-to-action {
+  background-color: #eaf6ff;
+  padding: 40px;
+  border-radius: 8px;
+  margin-top: 40px;
+  text-align: center;
+  border: 1px solid #cce5ff;
+}
+
+.call-to-action h3 {
+  font-size: 2em;
+  color: var(--color-primary);
+  margin-bottom: 15px;
+}
+
+.call-to-action p {
+  font-size: 1.1em;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  color: #444;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #28a745;
+  color: white;
+  font-size: 1.1em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+
+.cta-button:hover {
+  background-color: #218838;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .partners-section h2 {
+      font-size: 2em;
+  }
+
+  .partners-grid {
+      grid-template-columns: 1fr; 
+  }
+
+  .partner-card {
+      padding: 20px;
+  }
+
+  .call-to-action {
+      padding: 30px;
+  }
+
+  .call-to-action h3 {
+      font-size: 1.6em;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners-section {
+      padding: 40px 0;
+  }
+  .partners-section .section-description {
+      font-size: 1em;
+  }
+  .partner-card h3 {
+      font-size: 1.3em;
+  }
+  .partner-logo {
+      max-width: 100px;
+  }
+}
+
 /* =========================== OTHER PAGES =========================================== */
 .about-section {
   text-align: center;
