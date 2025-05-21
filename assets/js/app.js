@@ -2,7 +2,28 @@ import bootstrap from "bootstrap"; // Import Bootstrap SJ
 import scrollReveal from "scrollreveal";
 
 // Scroll reveal
-ScrollReveal().reveal(".headline");
+document.addEventListener('DOMContentLoaded', () => {
+  const scrollRevealElements = document.querySelectorAll('.scroll-reveal');
+
+  const observerOptions = {
+      root: null, 
+      rootMargin: '0px', 
+      threshold: 0.1 
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('revealed');
+              observer.unobserve(entry.target);
+          }
+      });
+  }, observerOptions);
+
+  scrollRevealElements.forEach(el => {
+      observer.observe(el);
+  });
+});
 
 // Initialize Bootstrap carousel
 const reviewCarousel = new bootstrap.Carousel(
