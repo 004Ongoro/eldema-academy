@@ -1,3 +1,45 @@
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const modalHTML = `
+      <div class="modal-overlay" id="volunteerModalOverlay">
+        <div class="modal-content">
+          <button class="modal-close-button" id="closeVolunteerModal">&times;</button>
+          <div class="modal-header">
+            <h2>Volunteer at Eldema Letap Academy!</h2>
+          </div>
+          <div class="modal-body">
+            <p>Are you passionate about making a difference? Eldema Letap Academy is looking for enthusiastic volunteers in various fields to help us achieve our mission.</p>
+            <p>Your skills and time can help shape brighter futures!</p>
+          </div>
+          <a href="https://eldemaletapacademy.org/volunteers/" class="modal-cta-button">Learn More & Volunteer</a>
+        </div>
+      </div>
+    `;
+
+    document.body.insertAdjacentHTML('beforeend', modalHTML);
+
+    const volunteerModalOverlay = document.getElementById('volunteerModalOverlay');
+    const closeVolunteerModalButton = document.getElementById('closeVolunteerModal');
+
+    function showModal() {
+      volunteerModalOverlay.classList.add('active');
+    }
+
+    function hideModal() {
+      volunteerModalOverlay.classList.remove('active');
+    }
+
+    closeVolunteerModalButton.addEventListener('click', hideModal);
+
+    volunteerModalOverlay.addEventListener('click', function(event) {
+      if (event.target === volunteerModalOverlay) {
+        hideModal();
+      }
+    });
+
+    showModal();
+  });
+
 document.addEventListener('DOMContentLoaded', () => {
   const scrollRevealElements = document.querySelectorAll('.scroll-reveal');
 
